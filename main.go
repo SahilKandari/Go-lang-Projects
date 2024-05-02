@@ -253,7 +253,7 @@ func createTweetTable(db *sql.DB) {
 		);`
 
 	_, err := db.Exec(query)
-
+	fmt.Println(err)
 	if err != nil {
 		log.Fatal(err)
 	}
